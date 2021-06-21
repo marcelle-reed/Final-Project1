@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dad's Double Navigation Bar</title>
+  <link rel="stylesheet" href="stlyes-css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="multi-color-border"></div>
+    <div class="top-nav">
+      <div class="left">
+        <div class="logo-title">
+          <p><span>Dad's </span>Got It!</p>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+        </div>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#">What's New!</a></li>
+          <li><a href="#">Sign Up for Newsletter</a></li>
+<!--           <li><a href="#">Post a Tip</a></li>         -->
+<!--           <h2>Modal Signup Form</h2> -->
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Post a Tip</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="form-container">
+      <h1>Post Tip</h1>
+<!--       <p>Please fill in this form.</p> -->
+      <hr>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+      
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="tip"><b>Tip</b></label>
+      <input type="text" placeholder="Enter Tip" name="tip" required>
+         
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="submitbtn">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+        </ul>
+        
+      </div>
+    </div>
+    
+    <!-- Bottom Nav/Hamburger Menu -->
+    <header class="global-header" id="top-nav">
+      <section class="nav-left">
+          <ul class="nav">
+            <li id="menu-1-button">Parenting</li>
+            <li id="menu-2-button">Play</li>
+            <li id="menu-3-button">Health & Relationships</li>
+            <li id="menu-4-button">Misc</li>
+          </ul>  
+     </section>
+        <div class="nav-left">
+          <div class="hamburger-menu" id="menu-trigger">
+<!--             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg" alt="Hamburger icon"> -->
+           <div class="center">
+    <div></div>
+  </div>
+          </div>
+        </div>
+      </header> 
+     <!--Side menu-->
+      <aside class="side-menu-position side-menu-design" id="side-menu">
+        
+        <header class="side-menu-header">
+           <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/x.svg" alt="Close this menu" id="menu-close">
+        </header>
+        <ul class="side-menu-content">
+          <li>Parenting</li>
+          <li>Play</li>
+          <li>Health & Relationship</li>
+          <li>Misc</li>
+        </ul>
+      </aside>
+      <aside class="dropdown-menu" id="menu-1">
+        <h2 class="menu-header">What Size?</h2>
+        <ul class="menu-item-list">
+          <li><a href="#">Pre-school</a></li>
+          <li><a href="#">Big Kid</a></li>
+          <li><a href="#">Tween & Teen</a></li>
+        </ul>
+      </aside>
+      <aside class="dropdown-menu" id="menu-2">
+        <h2 class="menu-header">Let's Have Some Fun!</h2>
+        <ul class="menu-item-list">
+          <li><a href="#">Outside Activities</a></li>
+          <li><a href="#">Movies, TV, Books, Music</a></li>
+          <li><a href="#">Pets</a></li>       
+        </ul>
+      </aside>
+      <aside class="dropdown-menu" id="menu-3">
+        <h2 class="menu-header">What About Us?</h2>
+        <ul class="menu-item-list">
+          <li><a href="#">Relationships</a></li>
+          <li><a href="#">Sex</a></li>
+          <li><a href="#">Finances</a></li>
+        </ul>
+      </aside>
+      <aside class="dropdown-menu" id="menu-4">
+        <h2 class="menu-header">Extra, Extra!</h2>
+        <ul class="menu-item-list">
+          <li><a href="#">Tips</a></li>
+          <li><a href="#">Ideas</a></li>
+          <li><a href="#">Help Center</a></li>
+        </ul>
+      </aside>
+          <script src="js/main.js"></script>
+  <!--Main-Class-->
+  <main>
+
+    <section class="hero image-mask-dark">
+      <div class="hero-container">
+        <h2>"Mom's drained...Step it up dad"!</h2>
+        <p>Fatique settling in on Mom? Want to relieve her from some duties?</p>
+        <div>
+          <form action="https://www.more4kids.info/549/best-parenting-websites/">
+          <button type="submit" id="hero-button">Tips</button>
+          </form>
+        </div>
+    </section>
+      
+    <!--Item Boxes-->
+    <section class="bottom-3spots">
+       
+      <div class="Recipes">
+        <h2>Fun Food Ideas</h2>
+        <p>Kids not into the brussel sprouts? Try some of these quick and helpful recipes!</p>
+        <form action="https://www.allrecipes.com/recipes/453/everyday-cooking/family-friendly/kid-friendly/">
+        <button type="submit">Recipes</button>
+          </form>
+      </div>
+          <div class="Activities">
+        <h2>Get Creative</h2>
+        <p>Looking for fun and cool activities? Look no further.</p>
+        <form action="https://kidactivities.net/">   
+        <button type="sumbit">Activities</button>
+          </form> 
+      </div>
+      <div class="Reminders">
+        <h2>Forgetting Appointments?</h2>
+        <p>Need some help setting and remembering appointments? Look no further!</p>
+        <form action="https://www.fatherly.com/love-money/best-co-parenting-apps-scheduling-apps-parents/">
+        <button type="submit">Set Reminders</button>
+        </form>
+      </div>
+    
+    </section>
+    <div class="insights">
+      <h3>Site description</h3>
+      <p>This site is intended to help Fathers get involved with the day-to-day activities and lifestyle maintenance of their households. With Moms working more and focusing on careers, managing the household is a multi-parent task and Dads have to step-up to the plate, literally! Preparing meals and washing dishes! It's time for Dads to roll-up their sleeves and take on the tasks historically and culturally designed for women. With the times changing men are enlisted to pick up the slack in the household and this website will assist men on that journey.</p>
+    </div>
+    <footer>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Articles</a></li>
+        </ul>
+      </div>
+      <p>Copyright © 2021 Marcelle Reed, LLC. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+
+</html>
